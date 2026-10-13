@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/plan",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/plan/",
+      "destination": "/index.html"
+    }
+  ]
+}

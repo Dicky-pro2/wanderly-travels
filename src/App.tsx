@@ -178,7 +178,8 @@ function HomePage() {
 }
 
 function App() {
-  return window.location.pathname === '/plan' ? <TripPlannerPage /> : <HomePage />
+  const pathname = window.location.pathname.replace(/\/+$/, '')
+  return pathname === '/plan' ? <TripPlannerPage /> : <HomePage />
 }
 
 export default App
